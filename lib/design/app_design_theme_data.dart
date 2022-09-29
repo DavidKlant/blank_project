@@ -97,10 +97,10 @@ class AppDesignThemeData {
         cardTheme: CardTheme(
           elevation: 8,
           clipBehavior: Clip.hardEdge,
-          color: UIColors.darkBlue01,
+          color: UIColors.backgroundColor,
           margin: EdgeInsets.zero,
           shape: RoundedRectangleBorder(
-            borderRadius: AppDesign.borderRadius10,
+            borderRadius: AppDesign.borderRadiusSmall,
           ),
           shadowColor: Colors.black,
         ),
@@ -126,7 +126,7 @@ class AppDesignThemeData {
             shadowColor: MaterialStateProperty.all(Colors.transparent),
             shape: MaterialStateProperty.all(
               RoundedRectangleBorder(
-                borderRadius: AppDesign.borderRadius10,
+                borderRadius: AppDesign.borderRadiusSmall,
               ),
             ),
           ),
@@ -170,14 +170,14 @@ class AppDesignThemeData {
             elevation: 0,
             behavior: SnackBarBehavior.floating),
         colorScheme: const ColorScheme(
-            primary: Colors.red,
-            onPrimary: Colors.red,
-            secondary: UIColors.white,
-            onSecondary: Colors.red,
+            primary: UIColors.white,
+            onPrimary: UIColors.backgroundColor,
+            secondary: UIColors.backgroundColor,
+            onSecondary: UIColors.white,
             error: Colors.red,
             onError: Colors.red,
-            background: Colors.red,
-            onBackground: Colors.red,
+            background: UIColors.backgroundColor,
+            onBackground: UIColors.white,
             surface: Colors.red,
             onSurface: Colors.red,
             brightness: Brightness.light,
@@ -189,13 +189,13 @@ class AppDesignThemeData {
           elevation: 0,
           backgroundColor: Colors.transparent,
           selectedItemColor: UIColors.white,
-          unselectedItemColor: UIColors.mediumGrey,
+          unselectedItemColor: UIColors.unselectedColor,
           selectedLabelStyle: textTheme.labelSmall,
           unselectedLabelStyle: textTheme.labelSmall,
         ),
         backgroundColor: Colors.red,
         highlightColor: UIColors.white,
-        scaffoldBackgroundColor: UIColors.darkBlue01,
+        scaffoldBackgroundColor: UIColors.backgroundColor,
         disabledColor: Colors.red,
       );
 }

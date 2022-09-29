@@ -11,8 +11,8 @@ class AppDesign {
   }
 
   // BORDER RADII
-  static BorderRadius borderRadius10 = BorderRadius.circular(10);
-  static BorderRadius borderRadius15 = BorderRadius.circular(15);
+  static BorderRadius borderRadiusSmall = BorderRadius.circular(10);
+  static BorderRadius borderRadiusRegular = BorderRadius.circular(15);
   static BorderRadius borderRadiusFull = BorderRadius.circular(9999);
 
   // PADDING
