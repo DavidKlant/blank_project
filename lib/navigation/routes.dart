@@ -1,5 +1,5 @@
-import 'package:blank_project/pages/PopUpPage.dart';
 import 'package:blank_project/pages/init_data_page.dart';
+import 'package:blank_project/pages/pop_up_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

@@ -1,8 +1,6 @@
 import 'package:blank_project/pages/welcome_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
 
 class InitDataPage extends StatefulWidget {
   static String route = '/init_data';

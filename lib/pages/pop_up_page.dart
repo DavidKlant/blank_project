@@ -25,7 +25,8 @@ class _PopableBackground extends StatelessWidget {
   final Widget child;
 
   final Alignment? alignment;
-  const _PopableBackground({required this.child, this.alignment, super.key});
+  const _PopableBackground({required this.child, this.alignment, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
