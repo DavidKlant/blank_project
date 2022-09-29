@@ -17,3 +17,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ### TO BUILD MODELS RUN
 flutter pub run build_runner build --delete-conflicting-outputs
+
+#### TODO in future
+1) audio
+2) video
+3) i18n (localisation)
