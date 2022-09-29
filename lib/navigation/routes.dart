@@ -1,3 +1,6 @@
+import 'package:blank_project/pages/home_pages/home_page_1.dart';
+import 'package:blank_project/pages/home_pages/home_page_2.dart';
+import 'package:blank_project/pages/home_pages/home_page_3.dart';
 import 'package:blank_project/pages/init_data_page.dart';
 import 'package:blank_project/pages/pop_up_page.dart';
 import 'package:blank_project/pages/welcome_page.dart';
@@ -20,6 +23,30 @@ class Routes {
           NoTransitionPage<void>(
         key: state.pageKey,
         child: const WelcomePage(),
+      ),
+    ),
+    GoRoute(
+      path: HomePage1.route,
+      pageBuilder: (BuildContext context, GoRouterState state) =>
+          NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const HomePage1(),
+      ),
+    ),
+    GoRoute(
+      path: HomePage2.route,
+      pageBuilder: (BuildContext context, GoRouterState state) =>
+          NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const HomePage2(),
+      ),
+    ),
+    GoRoute(
+      path: HomePage3.route,
+      pageBuilder: (BuildContext context, GoRouterState state) =>
+          NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const HomePage3(),
       ),
     ),
     GoRoute(
