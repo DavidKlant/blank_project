@@ -4,16 +4,14 @@ import 'package:flutter/material.dart';
 
 class AppDesignThemeData {
   static TextTheme textTheme = const TextTheme(
-    /*
-          100 – Thin.
+    /*    100 – Thin.
           200 – Extra Light (Ultra Light)
           300 – Light.
           400 – Normal / regular.
           500 – Medium.
           600 – Semi Bold (Demi Bold)
           700 – Bold.
-          800 – Extra Bold (Ultra Bold)
-           */
+          800 – Extra Bold (Ultra Bold)*/
     bodyLarge: TextStyle(
       fontSize: 18,
       height: 1.56,
