@@ -1,3 +1,4 @@
+import 'package:blank_project/functionality/notifications/local_notification_schedule.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -9,10 +10,19 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     //UserProvider userProvider = context.watch<UserProvider>();
 
-    return const Scaffold(
+    return Scaffold(
       body: SizedBox(
-        child: Center(
-          child: Text("Welcome"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Text("Welcome"),
+            ElevatedButton(
+                onPressed: () {
+                  LocalNotificationSchedule.instantNotification();
+                },
+                child: const Text("Instant notification")),
+          ],
         ),
       ),
     );

@@ -10,7 +10,7 @@ FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  LocalNotificationsSetup.init();
+  await LocalNotificationsSetup.init();
   await SharedPrefs.init();
   runApp(const BlankApp());
 }
